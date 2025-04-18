@@ -13,10 +13,13 @@
 }
 body{
     font-family: "Open Sans", sans-serif;
+    font-size: 15px;
 }
+/*Barra de navegación*/
 .contenedor-principal{
     width: 100%;
     background-color: rgba(241, 242, 243, 0.884);
+    position: fixed;
 }
 .contenedor-header{
     display: flex;
@@ -36,14 +39,52 @@ body{
     padding: 3px;
     text-decoration: none;
     color: black;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.contenedor-enlaces ul li a:hover{
+    background-color:  rgba(223, 224, 224, 0.884);
 }
 .icon-xl{
     font-size: 1.5rem;
 }
 .contenedor-logo{
     display: flex;
-    gap: 10px;
+}
+.contenedor-logo a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.contenedor-logo a:hover{
+    background-color:  rgba(223, 224, 224, 0.884);
 }
 .contenedor-logo p{
-    margin-top: 10px;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.nav-responsive{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+    border: 1px solid rgb(214, 214, 216);
+    color: rgb(135, 136, 136);
+}
+
+@media screen and (max-width:980px){
+    nav {
+        display:none
+    }
+    .nav-responsive{
+        display: block;
+    }
+    .nav-responsive ul{
+        display: block !important;
+    }
 }
