@@ -3,10 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*google fonts*/
+.open-sans-uniquifier {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
 .contenedor-principal{
     width: 100%;
-    background-color: gray;
+    background-color: rgba(241, 242, 243, 0.884);
 }
 .contenedor-header{
     display: flex;
@@ -26,7 +36,6 @@
     padding: 3px;
     text-decoration: none;
     color: black;
-    font-weight: 600;
 }
 .icon-xl{
     font-size: 1.5rem;
@@ -34,4 +43,7 @@
 .contenedor-logo{
     display: flex;
     gap: 10px;
+}
+.contenedor-logo p{
+    margin-top: 10px;
 }
