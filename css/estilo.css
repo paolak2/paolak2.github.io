@@ -45,8 +45,10 @@ body{
 .contenedor-enlaces i{
     padding-right: 5px;
 }
+@media screen and (min-width:980px){
 .contenedor-enlaces ul li a:hover{
     background-color:  rgba(223, 224, 224, 0.884);
+}
 }
 .icon-xl{
     font-size: 1.5rem;
@@ -111,4 +113,16 @@ body{
     .nav-responsive{
         display: block;
     }
+
+    .contenedor-enlaces ul li{
+        text-decoration: none;
+        color: black;
+        transition: .5s;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .contenedor-enlaces ul li:hover{
+        background-color:  rgba(223, 224, 224, 0.884);
+    }
+
 }
