@@ -23,7 +23,6 @@ body{
 }
 .contenedor-header{
     display: flex;
-
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +65,7 @@ body{
 }
 .contenedor-logo a:hover{
     background-color:  rgba(223, 224, 224, 0.884);
+    
 }
 .contenedor-logo p{
     transition: .5s;
@@ -130,7 +130,6 @@ body{
 }
 
 main {
-    background-color: blue;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "caja1""caja2";
@@ -145,7 +144,6 @@ main {
     justify-content: center;
     flex-direction: column;
     grid-area: caja1;
-    background-color: palegreen;
     height: 80vh;
 }
 
@@ -184,21 +182,20 @@ main {
     color: rgba(172, 173, 173, 0.884);
 }
 /*footer*/
-.container{
-    color: gray;
-}
 .footer{
     grid-area: caja2;
-    background-color: yellowgreen;
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 20vh;
+}
+.container{
+    color: gray;
 }
 .iconosfooter {
     font-size: 20px;
     margin: 10px 1px;
     padding-top: 15px;
+    text-align: center;
 } 
 .iconosfooter i{
     color: rgba(172, 173, 173, 0.884);
