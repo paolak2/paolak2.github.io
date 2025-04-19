@@ -19,10 +19,11 @@ body{
 .contenedor-principal{
     width: 100%;
     background-color: rgba(241, 242, 243, 0.884);
+    border-bottom: 1px solid  rgba(172, 173, 173, 0.884);
 }
 .contenedor-header{
     display: flex;
-    max-width: 1100px;
+
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -45,8 +46,10 @@ body{
 .contenedor-enlaces i{
     padding-right: 5px;
 }
+@media screen and (min-width:980px){
 .contenedor-enlaces ul li a:hover{
     background-color:  rgba(223, 224, 224, 0.884);
+}
 }
 .icon-xl{
     font-size: 1.5rem;
@@ -92,6 +95,7 @@ body{
         width: 50%;
         background-color: #fff;
         z-index: 1000;
+        border-radius: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -111,4 +115,53 @@ body{
     .nav-responsive{
         display: block;
     }
+
+    .contenedor-enlaces ul li{
+        text-decoration: none;
+        color: black;
+        transition: .5s;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .contenedor-enlaces ul li:hover{
+        background-color:  rgba(223, 224, 224, 0.884);
+    }
+
+}
+/*Página principal presentación*/
+.contenedor{
+    display: flex;
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+}
+.contenedor-imagen img{
+    width: 285px;
+    height: 285px;
+    background-color: #fff;
+    border: 2px solid rgba(215, 218, 218, 0.884);
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.contenedor-imagen{
+    text-align: left;
+}
+.contenedor-imagen button{
+    background-color:  rgba(241, 242, 243, 0.884);
+    padding: 8px 100px;
+    border-radius: 5px;
+    border: 0.5px solid  rgba(172, 173, 173, 0.884);
+    margin-bottom: 25px;
+}
+.contenedor-imagen a{
+    text-decoration: none;
+    color: black;
+}
+.contenedor-imagen p{
+    color: rgb(164, 165, 165);
+    padding-bottom: 15px;
+}
+.contenedor-imagen hr{
+    color: rgba(172, 173, 173, 0.884);
 }
